@@ -30,7 +30,7 @@ const App = () => {
 
       <div>
         {messages.map((message, index) => (
-          <p key={index} className="p-2 bg-zinc-400 m-2">
+          <p key={index} className="p-2 bg-zinc-400 m-2 rounded-md">
             {message}
           </p>
         ))}
