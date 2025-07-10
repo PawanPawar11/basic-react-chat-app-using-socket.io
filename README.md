@@ -20,7 +20,7 @@ Use your favorite editor (e.g., **VS Code**, **WebStorm**, etc.).
 
 ---
 
-## 🚀 Run the Client
+## 🔩 Set up the Client Folder
 
 ### Step 1: Navigate to the client directory
 
@@ -38,7 +38,7 @@ This will install all the required packages for the client.
 
 ---
 
-## 🚀 Run the Server
+## 🔩 Set up the Server Folder
 
 ### Step 1: Navigate to the server directory
 
@@ -56,7 +56,7 @@ This will install all the required packages for the server.
 
 ---
 
-## 🧪 Run Both Client & Server
+## 🔥 Run Both Client & Server
 
 1. Open **two terminals**:
 
