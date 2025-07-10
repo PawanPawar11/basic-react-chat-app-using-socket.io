@@ -17,7 +17,7 @@ const App = () => {
     };
   }, [messages]);
 
-  const handleSendMessage = () => {
+  const sendMessage = () => {
     if (messageInput.trim() !== "") {
       socket.emit("message", messageInput);
       setMessageInput("");
@@ -25,12 +25,12 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center h-screen gap-2">
       <h1>Simple React Chat App</h1>
 
       <div>
         {messages.map((message, index) => (
-          <p style={{ background: "gray" }} key={index}>
+          <p key={index} className="p-2 bg-zinc-400 m-2">
             {message}
           </p>
         ))}
@@ -41,9 +41,15 @@ const App = () => {
         placeholder="Enter your message here..."
         value={messageInput}
         onChange={(e) => setMessageInput(e.target.value)}
+        className="border-2 border-blue-300 rounded-md p-2"
       />
 
-      <button onClick={handleSendMessage}>Send</button>
+      <button
+        className="rounded-md bg-black text-white p-2"
+        onClick={sendMessage}
+      >
+        Send Message
+      </button>
     </div>
   );
 };

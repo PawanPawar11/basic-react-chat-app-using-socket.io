@@ -16,7 +16,7 @@ const io = new Server(server, {
 app.use(cors());
 
 io.on("connection", (socket) => {
-  console.log("Client got connected ✅");
+  console.log("User got connected! ✅");
 
   socket.on("message", (message) => {
     console.log("Message Received: ", message);
@@ -24,12 +24,11 @@ io.on("connection", (socket) => {
   });
 
   socket.on("disconnect", () => {
-    console.log("Client got disconnected ❌");
+    console.log("User got disconnected! ❌");
   });
 });
 
 const PORT = 5000;
-
 server.listen(PORT, () => {
-  console.log(`Server is listening on PORT: ${PORT}`);
+  console.log(`The Server is running on PORT: ${PORT}`);
 });
